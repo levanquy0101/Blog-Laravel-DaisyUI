@@ -11,8 +11,11 @@ export default defineConfig({
         tailwindcss(),
 
     ],
-    server: {
-        strictPort: true,
-        https: true, // Bật HTTPS
+    build: {
+        manifest: true,
+        outDir: 'public/build',
+      },
+      server: {
+        https: true,
       },
 });
