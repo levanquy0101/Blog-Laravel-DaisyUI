@@ -91,55 +91,55 @@
             <?php
             $blogPosts = [
                 [
-                    'image' => 'https://avatars.githubusercontent.com/u/138227498?v=4',
+                    'image' => asset('images/post1.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 14, 2023',
                     'title' => '30 ideas for a summer countryside photography'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post8-890x664.jpg',
+                    'image' => asset('images/post2.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'Top 5 camera lenses to use in nature photography'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post9-890x664.jpg',
+                    'image' => asset('images/post3.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 12, 2023',
                     'title' => 'The connection between web marketing & photo design'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post10-890x664.jpg',
+                    'image' => asset('images/post4.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'We know how to boost Instagram views in no time'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post11-890x664.jpg',
+                    'image' => asset('images/post5.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'Introducing explanation to new camera lens filters'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post12-890x664.jpg',
+                    'image' => asset('images/post6.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'Trending colors and shapes in interior photography'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post13-890x664.jpg',
+                    'image' => asset('images/post7.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'How to upgrade your social media profile today'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post14-890x664.jpg',
+                    'image' => asset('images/post8.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'The best software to edit your images with'
                 ],
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post15-890x664.jpg',
+                    'image' => asset('images/post9.jpg'),
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 13, 2023',
                     'title' => 'Must-have digital camera accessories in 2023'
@@ -147,6 +147,7 @@
             ];
 
             foreach ($blogPosts as $post) {
+                echo '<a href="/blog-detail">';
                 echo '<div class="card bg-base-100 rounded-none border-none hover:opacity-90 transition-opacity">';
                 echo '<figure><img src="' . $post['image'] . '" alt="' . $post['title'] . '" class="w-full h-64 object-cover" /></figure>';
                 echo '<div class="card-body px-0 pt-4 pb-8 bg-[#f7f5f1]">';
@@ -158,6 +159,7 @@
                 echo '<h2 class="post-title mt-2">' . $post['title'] . '</h2>';
                 echo '</div>';
                 echo '</div>';
+                echo '</a>';
             }
             ?>
         </div>
