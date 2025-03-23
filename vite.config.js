@@ -9,6 +9,10 @@ export default defineConfig({
             refresh: true,
         }),
         tailwindcss(),
-        
+
     ],
+    server: {
+        strictPort: true,
+        https: true, // Bật HTTPS
+      },
 });
