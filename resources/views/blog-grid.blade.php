@@ -91,7 +91,7 @@
             <?php
             $blogPosts = [
                 [
-                    'image' => 'https://chroma.themerex.net/wp-content/uploads/2023/06/post7-890x664.jpg',
+                    'image' => 'https://avatars.githubusercontent.com/u/138227498?v=4',
                     'category' => 'PHOTOGRAPHY',
                     'date' => 'June 14, 2023',
                     'title' => '30 ideas for a summer countryside photography'
