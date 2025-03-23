@@ -91,57 +91,57 @@
             <?php
             $blogPosts = [
                 [
-                    'image' => asset('images/post1.jpg'),
+                    'main_image' => asset('images/post1.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 14, 2023',
+                    'published_at' => 'June 14, 2023',
                     'title' => '30 ideas for a summer countryside photography'
                 ],
                 [
-                    'image' => asset('images/post2.jpg'),
+                    'main_image' => asset('images/post2.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'Top 5 camera lenses to use in nature photography'
                 ],
                 [
-                    'image' => asset('images/post3.jpg'),
+                    'main_image' => asset('images/post3.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 12, 2023',
+                    'published_at' => 'June 12, 2023',
                     'title' => 'The connection between web marketing & photo design'
                 ],
                 [
-                    'image' => asset('images/post4.jpg'),
+                    'main_image' => asset('images/post4.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'We know how to boost Instagram views in no time'
                 ],
                 [
-                    'image' => asset('images/post5.jpg'),
+                    'main_image' => asset('images/post5.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'Introducing explanation to new camera lens filters'
                 ],
                 [
-                    'image' => asset('images/post6.jpg'),
+                    'main_image' => asset('images/post6.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'Trending colors and shapes in interior photography'
                 ],
                 [
-                    'image' => asset('images/post7.jpg'),
+                    'main_image' => asset('images/post7.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'How to upgrade your social media profile today'
                 ],
                 [
-                    'image' => asset('images/post8.jpg'),
+                    'main_image' => asset('images/post8.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'The best software to edit your images with'
                 ],
                 [
-                    'image' => asset('images/post9.jpg'),
+                    'main_image' => asset('images/post9.jpg'),
                     'category' => 'PHOTOGRAPHY',
-                    'date' => 'June 13, 2023',
+                    'published_at' => 'June 13, 2023',
                     'title' => 'Must-have digital camera accessories in 2023'
                 ]
             ];
@@ -149,12 +149,12 @@
             foreach ($blogPosts as $post) {
                 echo '<a href="/blog-detail">';
                 echo '<div class="card bg-base-100 rounded-none border-none hover:opacity-90 transition-opacity">';
-                echo '<figure><img src="' . $post['image'] . '" alt="' . $post['title'] . '" class="w-full h-64 object-cover" /></figure>';
+                echo '<figure><img src="' . $post['main_image'] . '" alt="' . $post['title'] . '" class="w-full h-64 object-cover" /></figure>';
                 echo '<div class="card-body px-0 pt-4 pb-8 bg-[#f7f5f1]">';
                 echo '<div class="flex items-center space-x-2">';
                 echo '<span class="category">' . $post['category'] . '</span>';
                 echo '<span class="text-gray-400">•</span>';
-                echo '<span class="date text-gray-600 worksans">' . $post['date'] . '</span>';
+                echo '<span class="date text-gray-600 worksans">' . $post['published_at'] . '</span>';
                 echo '</div>';
                 echo '<h2 class="post-title mt-2">' . $post['title'] . '</h2>';
                 echo '</div>';
