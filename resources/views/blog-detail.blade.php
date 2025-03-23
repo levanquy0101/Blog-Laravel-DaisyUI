@@ -68,7 +68,7 @@
         }
     </style>
 </head>
-<body class="bg-white text-black">
+<body class="bg-[#f7f5f1] text-black">
     <!-- Header -->
     <header class="container mx-auto px-4 py-6 flex justify-between items-center">
         <div class="text-2xl font-semibold tracking-wider flex items-center gap-16">
