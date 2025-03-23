@@ -123,7 +123,7 @@
 
         <!-- Featured Image -->
         <div class="mb-10">
-            <img src="https://chroma.themerex.net/wp-content/uploads/2023/06/post12.jpg" alt="Woman leaning against tree" class="w-full h-auto">
+            <img src="{{ asset('images/post-detail.jpg') }}" alt="Woman leaning against tree" class="w-full h-auto">
         </div>
 
         <!-- Article Content -->
